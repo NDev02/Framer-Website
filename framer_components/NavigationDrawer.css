@@ -1,0 +1,74 @@
+.NavigationDrawer {
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    font-family: 'Fugaz One';
+    /* box-shadow: inset 5px 0px 8px #0005; */
+    z-index: 1;
+    position: relative;
+    color: var(--foreground);
+}
+
+.NavigationDrawer.open {
+    display: block!important;
+    animation: slide-right 0.2s;
+}
+
+.NavigationDrawer.close {
+    left: -100%;
+    animation: slide-left 0.2s;
+}
+
+.NavigationDrawer h2 {
+    margin: 0;
+    padding: 1em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.NavigationDrawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.NavigationDrawer ul li {
+    margin: 0.5em 0.5em 0.5em 0em;
+    padding: 0.5em;
+    border-radius: 0em 0.8em 0.8em 0em;
+    transition: var(--transition);
+}
+
+.NavigationDrawer ul li:hover {
+    background: var(--hover);
+    cursor: pointer;
+}
+
+.NavigationDrawer ul li a {
+    display: block;
+    color: var(--foreground);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.NavigationDrawer ul li a:active {
+    color: var(--active);
+}
+
+@keyframes slide-right {
+    from{ left: -100%; } 
+    to{ left: 0px; }
+}
+
+@keyframes slide-left {
+    from{ left: 0px; } 
+    to{ left: -100%; }
+}
+
+@media(max-width: 800px) {
+    .NavigationDrawer {
+        width: 300px;
+        position: absolute;
+        top: 0;
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.MobileAppBar {
+    position: sticky;
+    top: 0;
+    width: calc(100% - 2em);
+    display: grid;
+    grid-template-columns: 2em auto 2em;
+    background: var(--background);
+    color: var(--foreground);
+    align-content: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.MobileAppBar h1 {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: normal;
+    cursor: default;
+}
+
+.MobileAppBar i {
+    cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .MobileAppBar {
+        display: none;
+    }
+}
