@@ -16,14 +16,14 @@ export default class MyComponent extends FramerComponent {
                 <hr className="varient"/>
                 <div className="section-center">
                     <article>
-                        <h1>Startup Project</h1>
+                        <h1> <a target="_blank" href="https://github.com/Ndev02/Framer">Startup Project</a></h1>
                         <p>When you go to download the files from github that include the framework code if you download the whole repository it will come with an already set up example project that you can get started right away with.</p>
                     </article>
                 </div>
                 <hr className="varient"/>
                 <div className="section-center">
                     <article>
-                        <h1>This Website</h1>
+                        <h1> <a href="https://github.com/Ndev02/Framer-Website">This Website</a></h1>
                         <p>Visit the GitHub repo linked above and download the whole repo as a .zip file, this will serve as a pretty neat example project as this website was created using Framer. Pretty cool, right?!</p>
                     </article>
                 </div>

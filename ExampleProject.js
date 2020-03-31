@@ -10,12 +10,16 @@ export default class MyComponent extends FramerComponent {
             Framer.createElement("hr", { className: "varient" }),
             Framer.createElement("div", { className: "section-center" },
                 Framer.createElement("article", null,
-                    Framer.createElement("h1", null, "Startup Project"),
+                    Framer.createElement("h1", null,
+                        " ",
+                        Framer.createElement("a", { target: "_blank", href: "https://github.com/Ndev02/Framer" }, "Startup Project")),
                     Framer.createElement("p", null, "When you go to download the files from github that include the framework code if you download the whole repository it will come with an already set up example project that you can get started right away with."))),
             Framer.createElement("hr", { className: "varient" }),
             Framer.createElement("div", { className: "section-center" },
                 Framer.createElement("article", null,
-                    Framer.createElement("h1", null, "This Website"),
+                    Framer.createElement("h1", null,
+                        " ",
+                        Framer.createElement("a", { href: "https://github.com/Ndev02/Framer-Website" }, "This Website")),
                     Framer.createElement("p", null, "Visit the GitHub repo linked above and download the whole repo as a .zip file, this will serve as a pretty neat example project as this website was created using Framer. Pretty cool, right?!")))));
     }
 }
