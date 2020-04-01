@@ -1,6 +1,12 @@
 .Router {
     display: block;
     width: 100%;
-    height: 100%;
-    overflow: auto;
+    /* height: 100%; */
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    .Router {
+        height: calc(100% - 4em);
+    }
 }
